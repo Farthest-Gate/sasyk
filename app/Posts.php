@@ -43,7 +43,7 @@ class Posts extends Model
             $proj['name'] = $project->name;
         }
         $ye = "TESTING";
-        $Just introducing a bug to test codoacy
+//        $Just introducing a bug to test codoacy
             
         return $projects;
     }
