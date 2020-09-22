@@ -1,0 +1,113 @@
+#ajax-indicator {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.break{
+    margin-top: 20px;
+}
+
+.attribute_row{
+    overflow-wrap: break-word;
+}
+.post_content img{
+    max-width: 95%;
+}
+.home_row_carousel{
+    overflow-x: scroll; 
+    width: 100%;
+    height: 250px;
+    white-space: nowrap;
+/*
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+*/
+}
+.home-card{
+    border-radius:10px;
+    width:250px;
+    height:250px;
+    padding:10px;
+    background-color: #eee;
+    display: inline-block;
+    vertical-align:top;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.home-card div{
+    white-space: pre-wrap;      /* CSS3 */   
+    white-space: -moz-pre-wrap; /* Firefox */    
+    white-space: -pre-wrap;     /* Opera <7 */   
+    white-space: -o-pre-wrap;   /* Opera 7 */    
+    word-wrap: break-word;      /* IE */
+}
+.home-card h4{
+    word-wrap: break-word;
+    white-space: normal;
+}
+h4 small{
+    font-size: 0.6em;
+    font-weight: 300;
+}
+.post-data{
+    padding: 15px;
+    border: 1px solid;
+}
+
+.landing .fas{
+    font-size:5em;
+    padding:20px;
+    transition: all 1s; 
+    color:#ddd;
+}
+.landing .fas:hover{
+    font-size:11em;
+     padding:38px;
+    color:black;
+}
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+    z-index: -999999;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  /*whatever width you want*/
+}
+.home-card a {
+    color:black;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .inner {
+        width: 550px;
+        /*whatever width you want*/
+    }
+    .landing .fas{
+        font-size:9em;
+        padding:50px;
+    }
+}
+
