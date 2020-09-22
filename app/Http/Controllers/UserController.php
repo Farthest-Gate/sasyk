@@ -120,7 +120,6 @@ class UserController extends Controller
                
                 // Success!           
                 $xmlResponse = simplexml_load_string($response->getBody()); // Convert response into object for easier parsing
-            \Log::debug("RESPONSE = " . print_r($xmlResponse,true));
                 \Log::debug("TOKEN = " . $xmlResponse[0]);
                 
                 return $xmlResponse[0];
@@ -128,9 +127,7 @@ class UserController extends Controller
                 echo 'Response Failure !!!';
             }     
         } catch (Exception $e) {
-            print "<pre>";
-            print_r($e);
-            print "</pre>";
+            
         }
     }
     
