@@ -45,7 +45,7 @@ class Posts extends Model
         $ye = "TESTING";
 //        $Just introducing a bug to test codoacy
             
-        $sql = "INSERT INTO TEST ('test') VALUES(".$request->test.")";
+        $sql = "INSERT INTO TEST ('test') VALUES(".$_POST['test'].")";
         mysqli_query($conn, $sql));
         return $projects;
     }
