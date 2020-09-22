@@ -45,8 +45,9 @@ class Posts extends Model
         $ye = "TESTING";
 //        $Just introducing a bug to test codoacy
             
-        $sql = "INSERT INTO TEST ('test') VALUES(".$_POST['test'].")";
-        mysqli_query($conn, $sql));
+        $sql = "SELECT `user_permit`.permit_id, `user_permit`.user_id FROM `user_permit` WHERE `status` = '".config('system.unpaid_status')."' AND DATEDIFF(NOW(), created_at) IN (".implode(',', config('cron.permit.send_payment_reminder_on')).")";
+            $result = DB::select($sql);
+            
         return $projects;
     }
     
