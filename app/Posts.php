@@ -42,6 +42,9 @@ class Posts extends Model
             $project = Projects::find($proj->project_id);
             $proj['name'] = $project->name;
         }
+        $ye = "TESTING";
+        $Just introducing a bug to test codoacy
+            
         return $projects;
     }
     
